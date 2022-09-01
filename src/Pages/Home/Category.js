@@ -5,7 +5,7 @@ const Category = ({ category}) => {
     
     return (
         <button >
-<div class="card lg:max-w-lg bg-base-100 shadow-xl ">
+<div class="card lg:max-w-lg bg-base-100 shadow-xl  ">
         <figure class="px-10 pt-10">
           <img src={category.img}  class="rounded-xl" />
         </figure>

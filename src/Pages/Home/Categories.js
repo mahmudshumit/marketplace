@@ -2,9 +2,9 @@ import React from 'react';
 import art from '../../assets/images/art.png';
 import photography from '../../assets/images/photography.jpg';
 import sports from '../../assets/images/sports.png';
-import music from '../../assets/images/music.jpg';
-import anime from '../../assets/images/anime.jpg';
-import virtual from '../../assets/images/img-02.jpg';
+import music from '../../assets/images/img-06.jpg';
+import anime from '../../assets/images/img-03.jpg';
+import virtual from '../../assets/images/img-04.jpg';
 import Category from './Category';
 
 const Categories = () => {
@@ -41,7 +41,7 @@ const Categories = () => {
         }
     ];
     return (
-    <div className='my-24'>
+    <div className='my-24 px-12'>
        <div className="text-center ">
         <h1 className='font-bold text-4xl '>Browse by Category</h1>
        </div>

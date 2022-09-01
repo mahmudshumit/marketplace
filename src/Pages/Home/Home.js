@@ -1,16 +1,23 @@
 import React from 'react';
 import Banner from './Banner';
 import Categories from './Categories';
+import Footer from './Footer';
 import Info from './Info';
+import TopSeller from './TopSeller';
+import TopCollection from './TopSeller';
 import Website from './Website';
 
 const Home = () => {
     return (
-        <div className='px-12 '>
+        <div>
         <Banner></Banner>
         <Info></Info>
         <Categories></Categories>
         <Website></Website>
+        <TopSeller></TopSeller>
+      
+        <Footer></Footer>
+      
 
         </div>
     );

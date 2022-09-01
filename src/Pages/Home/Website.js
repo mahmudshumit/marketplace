@@ -8,10 +8,10 @@ const Website = () => {
       style={{
         background: `url(${bg})`,
       }}
-      className="flex justify-center  items-center "
+      className="flex justify-center  items-center  "
     >
-      <div className="flex-1">
-        <img className="mt-[-90px]" src={website}></img>
+      <div className="flex-1 px-12">
+        <img className="mt-[-90px] " src={website}></img>
       </div>
       <div className="flex-1">
         <h1 className="text-3xl text-primary font-bold py-2">

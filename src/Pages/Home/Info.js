@@ -7,7 +7,7 @@ import list from "../../assets/images/sell3.png";
 
 const Info = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 ">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 px-12 ">
       <InfoCard
         pClass="Click My Collections and set up your collection. Add social links, a description, profile & banner images, and set a secondary sales fee."
         btnClass="Create"
