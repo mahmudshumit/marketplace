@@ -1,6 +1,10 @@
 import React from 'react';
 import art from '../../assets/images/art.png';
 import photography from '../../assets/images/photography.jpg';
+import sports from '../../assets/images/sports.png';
+import music from '../../assets/images/music.jpg';
+import anime from '../../assets/images/anime.jpg';
+import virtual from '../../assets/images/img-02.jpg';
 import Category from './Category';
 
 const Categories = () => {
@@ -17,25 +21,25 @@ const Categories = () => {
         },
         {
             _id:3,
-            Name:'Art',
-            img: art
+            Name:'Sports',
+            img: sports
         },
         {
             _id:4,
-            Name:'Art',
-            img: art
+            Name:'Music',
+            img: music
         },
         {
             _id:5,
-            Name:'Art',
-            img: art
+            Name:'Anime',
+            img: anime
         },
         {
             _id:6,
-            Name:'Art',
-            img: art
-        },
-    ]
+            Name:'Virtual World',
+            img: virtual
+        }
+    ];
     return (
     <div className='my-24'>
        <div className="text-center ">
