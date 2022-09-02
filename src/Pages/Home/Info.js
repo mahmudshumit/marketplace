@@ -13,7 +13,7 @@ const Info = () => {
         btnClass="Create"
         cardTittle="Create your collection"
         img={collection}
-      ></InfoCard>
+      />
       <InfoCard
         pClass="Upload your work (image, video, audio, or 3D art), add a title and description, and customize your NFTs with properties, stats, and unlockable content"
         btnClass="Add Nft"

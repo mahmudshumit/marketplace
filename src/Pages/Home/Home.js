@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from './Banner';
 import Categories from './Categories';
-import Footer from './Footer';
+import Footer from '../Shared/Footer';
 import Info from './Info';
 import TopSeller from './TopSeller';
 import TopCollection from './TopSeller';
@@ -10,14 +10,13 @@ import Website from './Website';
 const Home = () => {
     return (
         <div>
-        <Banner></Banner>
-        <Info></Info>
-        <Categories></Categories>
-        <Website></Website>
-        <TopSeller></TopSeller>
-      
-        <Footer></Footer>
-      
+            <Banner />
+            <Info></Info>
+            <Categories></Categories>
+            <Website></Website>
+            <TopSeller></TopSeller>
+            <Footer></Footer>
+
 
         </div>
     );
