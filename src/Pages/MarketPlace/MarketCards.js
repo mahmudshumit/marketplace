@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import art from '../../assets/images/art.png';
 import photography from '../../assets/images/photography.jpg';
 import sports from '../../assets/images/sports.png';
@@ -6,7 +6,6 @@ import music from '../../assets/images/img-06.jpg';
 import anime from '../../assets/images/img-03.jpg';
 import virtual from '../../assets/images/img-04.jpg';
 import MarketCard from './MarketCard';
-import React, { useState } from 'react';
 import CardModal from './CardModal';
 
 

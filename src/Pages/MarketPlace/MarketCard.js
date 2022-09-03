@@ -16,9 +16,10 @@ const MarketCard = ({ card,setCollection }) => {
 </div>
 </div>
 <div class="card-actions justify-start">
-      <button 
+     
+      <label 
       onClick={()=>setCollection(card)}
-      class="btn btn-primary">Buy Now</button>
+      for="card-modal" class="btn btn-primary">Buy Now</label>
     </div>
   </div>
 </div>
