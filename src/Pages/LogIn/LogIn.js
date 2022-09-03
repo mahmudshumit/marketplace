@@ -3,6 +3,7 @@ import { useSignInWithGoogle,useSignInWithEmailAndPassword } from "react-firebas
 import auth from "../../firebase.init";
 import { useForm } from "react-hook-form";
 import Loading from "../Shared/Loading";
+import { Link } from "react-router-dom";
 
 const LogIn = () => {
   const [signInWithGoogle, guser, gloading, gerror] = useSignInWithGoogle(auth);
@@ -37,7 +38,7 @@ const LogIn = () => {
   }
 
 
-  if (guser) {
+  if (user|| guser) {
     console.log(guser);
   }
 
@@ -105,7 +106,7 @@ const LogIn = () => {
                         {signInError}
                         <input className='btn w-full max-w-xs text-white' type="submit" value="Login" />
                     </form>
-                    {/* <p><small>New to Doctors Portal <Link className='text-primary' to="/signup">Create New Account</Link></small></p> */}
+                     <p><small>New to CosMos? <Link className='text-primary' to="/signup">Create New Account</Link></small></p> 
                     <div className="divider">OR</div>
                     <button
                         onClick={() => signInWithGoogle()}
