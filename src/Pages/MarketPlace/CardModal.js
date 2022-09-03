@@ -9,8 +9,6 @@ const CardModal = ({collection}) => {
          
 <div>
 
-<label for="my-modal-6" class="btn modal-button">open modal</label>
-
 
 <input type="checkbox" id="card-modal" class="modal-toggle" />
 <div class="modal modal-bottom sm:modal-middle">
