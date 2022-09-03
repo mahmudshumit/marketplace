@@ -53,7 +53,7 @@ const TopSeller = () => {
       <section className='my-24 px-12'>
         <div>
             <div  className="text-center py-10 ">
-                <h1 className="text text-accent font-bold text-4xl "> TopCollection</h1>
+                <h1 className="text text-accent font-bold text-4xl "> TopSeller</h1>
             </div>
     
         </div>

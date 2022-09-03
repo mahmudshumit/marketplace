@@ -12,10 +12,10 @@ const MarketplaceBanner = () => {
   <div class="hero-content flex-col lg:flex-row ">
     <img src={footer} class="max-w-sm rounded-lg shadow-2xl bg " />
     <div>
-      <h1 class="text-5xl font-bold  ">Welcome to Digital NFT Market Place</h1>
-      <p class="py-2">The world’s first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.</p>
+      <h1 class="text-5xl font-bold p-5 ">Welcome to Digital NFT Market Place</h1>
+      <p class="p-5">The world’s first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.</p>
     
-      <button class="btn btn-primary ">Explore</button>
+      <button class="btn btn-primary ml-5 ">Explore</button>
       
     </div>
   </div>
