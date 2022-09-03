@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
-import art from '../../assets/images/art.png';
-import photography from '../../assets/images/photography.jpg';
-import sports from '../../assets/images/sports.png';
-import music from '../../assets/images/img-06.jpg';
-import anime from '../../assets/images/img-03.jpg';
-import virtual from '../../assets/images/img-04.jpg';
+import Monkey from '../../assets/images/card1 (1).jpg';
+import anime from '../../assets/images/anime.jpg';
+import Catto from '../../assets/images/card1 (6).jpg';
+import dream from '../../assets/images/img-09.jpg';
+import digital from '../../assets/images/img-08.jpg';
+import mars from '../../assets/images/music.jpg';
+
 import MarketCard from './MarketCard';
 import CardModal from './CardModal';
+
 
 
 const MarketCards = () => {
@@ -16,33 +18,41 @@ const MarketCards = () => {
     const cards =[
         {
             _id:1,
-            Name:'Art',
-            img: art
+            Name:'Monkey Pro',
+            img: Monkey,
+            price:445
+            
+            
         },
         {
             _id:2,
-            Name:'Photography',
-            img: photography
+            Name:'Catto',
+            img: Catto,
+            price:654
         },
         {
             _id:3,
-            Name:'Sports',
-            img: sports
+            Name:'Anime',
+            img: anime,
+            price:987
         },
         {
             _id:4,
-            Name:'Music',
-            img: music
+            Name:'Confusion Fusion',
+            img: dream,
+            price:444
         },
         {
             _id:5,
-            Name:'Anime',
-            img: anime
+            Name:'RoboCow',
+            img: digital,
+            price:456
         },
         {
             _id:6,
-            Name:'Virtual World',
-            img: virtual
+            Name:'Music Panda',
+            img:mars ,
+            price:765
         }
     ];
     return (

@@ -5,17 +5,13 @@ const MarketCard = ({ card,setCollection }) => {
   return (
     <div class="card lg:max-w-lg bg-base-100 shadow-xl glass">
   <figure><img src={card.img} alt="car!"/></figure>
-  <div class="card-body">
-    <h2 class="card-title">{card.Name}</h2>
-    <p>How to park your car at your garage?</p>
-    <div class="avatar">
-    <div class="avatar">
-  <div class="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-    <img src="https://placeimg.com/192/192/people" />
-  </div>
-</div>
-</div>
-<div class="card-actions justify-start">
+  <div class="card-body p-5">
+    <h2 class="card-title font-bold">{card.Name}</h2>
+   
+    <h2 class="card-title font-bold">Current Bid</h2>
+    <h3>${card.price}</h3>
+    
+<div class="card-actions justify-start mr-14">
      
       <label 
       onClick={()=>setCollection(card)}
