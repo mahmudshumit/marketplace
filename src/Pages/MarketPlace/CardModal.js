@@ -2,7 +2,7 @@
 
 const CardModal = ({collection}) => {
 
-    const{Name}=collection;
+    const{Name,img}=collection;
 
 
     return (
@@ -14,10 +14,10 @@ const CardModal = ({collection}) => {
 <div class="modal modal-bottom sm:modal-middle">
   <div class="modal-box">
   <label for="card-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-    <h3 class="font-bold text-lg">Buy For:{Name}</h3>
-    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+    <h3 class="font-bold text-lg">{Name}</h3>
+    <figure class="w-24"><img src={img} alt="car!"/></figure>
     <div class="modal-action">
-      <label for="card-modal" class="btn">Yay!</label>
+      <label for="card-modal" class="btn">Submit</label>
     </div>
   </div>
 </div>
