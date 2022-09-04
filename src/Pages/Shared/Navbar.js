@@ -3,6 +3,8 @@ import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import auth from "../../firebase.init";
+import 'remixicon/fonts/remixicon.css'
+
 
 const Navbar = () => {
 
@@ -67,9 +69,12 @@ const Navbar = () => {
             {mneuItems}
           </ul>
         </div>
-        <a href="/" class="btn btn-ghost normal-case text-xl">
-          CosMos
-        </a>
+        <h2 className=" d-flex gap-2 align-items-center ">
+              <span>
+                <i class="ri-fire-fill"></i>
+              </span>
+              000
+            </h2>
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal p-0">{mneuItems}</ul>

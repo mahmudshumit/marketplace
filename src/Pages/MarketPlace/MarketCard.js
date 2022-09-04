@@ -8,14 +8,14 @@ const MarketCard = ({ card,setCollection }) => {
   <div class="card-body p-5">
     <h2 class="card-title font-bold">{card.Name}</h2>
    
-    <h2 class="card-title font-bold">Current Bid</h2>
-    <h3>${card.price}</h3>
+    <h2 class="card-title font-bold"><i class="ri-auction-line"></i>Current Bid</h2>
+    <h3><i class="ri-currency-fill"></i>{card.price}</h3>
     
 <div class="card-actions justify-start mr-14">
      
       <label 
       onClick={()=>setCollection(card)}
-      for="card-modal" class="btn btn-primary">Buy Now</label>
+      for="card-modal" class="btn btn-primary"><i class="ri-wallet-fill"></i>Buy Now</label>
     </div>
   </div>
 </div>
