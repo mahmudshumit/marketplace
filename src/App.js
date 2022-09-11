@@ -10,13 +10,15 @@ import Create from './Pages/Create/Create';
 import RequireAuth from './Pages/LogIn/RequireAuth';
 
 
+
 const App = () => {
   return (
-    <div className='max-w-7xl mx-auto px-6 '>
+    <div className='max-w-12xl mx-auto px-6 '>
    <Navbar></Navbar>
    <Routes>
         <Route path="/" element={<Home />} />
         <Route path="create" element={<Create/>} />
+        <Route path="about" element={<About/>} />
 
 
         {/* <Route path="marketplace" element={<Marketplace/>} /> */}
@@ -24,7 +26,7 @@ const App = () => {
         <RequireAuth>
           <Marketplace></Marketplace>
         </RequireAuth>} />
-
+        
         <Route path="login" element={<LogIn/>} />
         <Route path="signup" element={<Signup/>} />
       </Routes>

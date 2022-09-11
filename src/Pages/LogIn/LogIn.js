@@ -1,26 +1,39 @@
-import React from "react";
-import { useSignInWithGoogle,useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import React, { useState } from "react";
+import { useSignInWithGoogle,useSignInWithEmailAndPassword, useSendEmailVerification } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { useForm } from "react-hook-form";
 import Loading from "../Shared/Loading";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-
+import { Button } from "bootstrap";
+import { sendPasswordResetEmail } from "firebase/auth";
+import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
+import { ThemeConsumer } from "react-bootstrap/esm/ThemeProvider";
 const LogIn = () => {
+  
+   
+   
   const [signInWithGoogle, guser, gloading, gerror] = useSignInWithGoogle(auth);
  
   const {
     register,
     formState: { errors },
     handleSubmit,
+    
   } = useForm();
+
+ 
 
   const [
     signInWithEmailAndPassword,
+    
     user,
     loading,
     error,
   ] = useSignInWithEmailAndPassword(auth);
-
+  
+  const [sendPasswordResetEmail, sending, rError] = useSendPasswordResetEmail(
+    auth
+  );
 
   let signInError;
 
@@ -47,11 +60,15 @@ const LogIn = () => {
     navigate(from,{replace:true});
   }
 
-  
+ 
   const onSubmit = (data) => {
     console.log(data);
     signInWithEmailAndPassword(data.email,data.password);
+  
   };
+  
+    
+
   return (
     <div className='flex h-screen justify-center items-center'>
             <div className="card w-96 bg-base-100 shadow-xl">
@@ -65,6 +82,7 @@ const LogIn = () => {
                             </label>
                             <input
                                 type="email"
+                                
                                 placeholder="Your Email"
                                 className="input input-bordered w-full max-w-xs"
                                 {...register("email", {
@@ -107,20 +125,40 @@ const LogIn = () => {
                                 {errors.password?.type === 'minLength' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
                             </label>
                         </div>
+        
 
                         {signInError}
+                        
                        <input  className='btn w-full max-w-xs text-white' type="submit"  value="Login" />
+                     
+                       
                     </form>
-                     <p><small>New to CosMos? <Link className='text-primary' to="/signup">Create New Account</Link></small></p> 
+                    
+                      <p><small>New to CosMos? <Link className='text-primary' to="/signup">Create New Account</Link></small></p>
+                     
+     
+    
+    
+  
+                 
+    
                     <div className="divider">OR</div>
                     <button
                         onClick={() => signInWithGoogle()}
                         className="btn btn-outline"
                     >Continue with Google</button>
+                  
                 </div>
+               
+                      
             </div>
+       
+                      
         </div >
-  );
+           
+        
+  );  
+    
 };
 
 export default LogIn;

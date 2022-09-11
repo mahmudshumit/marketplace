@@ -22,18 +22,14 @@ const Navbar = () => {
           Home
         </Link>
       </li>
-      {/* <li>
+       <li>
         <Link to="/about">About</Link>
-      </li> */}
+      </li> 
       <li>
         <Link to="/marketplace">Marketplace</Link>
       </li>
-      {/* <li>
-        <Link to="/seller">Seller</Link>
-      </li> */}
-      <li>
-        <Link to="/contact">Contact</Link>
-      </li>
+     
+     
       <li>
         <Link to="/create">Create</Link>
       </li>
@@ -70,7 +66,7 @@ const Navbar = () => {
           </ul>
         </div>
         <h2 className=" d-flex gap-2 align-items-center ">
-        <a class="btn btn-ghost normal-case text-xl"> <i class="ri-fire-fill"></i>000</a>
+        <a href="/"class="btn btn-ghost normal-case text-xl"> <i class="ri-fire-fill"></i>000</a>
               
             </h2>
       </div>

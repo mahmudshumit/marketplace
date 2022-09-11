@@ -13,7 +13,7 @@ const Banner = () => {
     <div>
       <h1 class="text-5xl font-bold  ">Digital NFT Market Place</h1>
       <p class="py-6">The world’s first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.</p>
-      <button class="btn btn-primary px-6"><i class="ri-wallet-2-fill"></i>Create</button>
+      <button  class="btn btn-primary px-6"><i class="ri-wallet-2-fill"></i>Create</button>
     </div>
   </div>
 </div>
